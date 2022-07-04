@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  sharingImgs:
+    image: node:12.2.0-alpine
+    build:
+      context: ./
+    command: 'nodemon /app/index.js'
+    volumes:
+      - '.:/app/'
+      - '/app/node_modules'
+    command: node index.js
+    env_file: .env
