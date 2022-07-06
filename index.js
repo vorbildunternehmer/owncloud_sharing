@@ -37,7 +37,7 @@ function handleJSON (data) {
 }
 
 async function createSharingLink (data) {
-
+  console.log(url + ':')
   data.forEach(async function (d) {
     const temp = await axiosSharingLink(d)
     result[temp] = ''
