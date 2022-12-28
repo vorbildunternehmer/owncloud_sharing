@@ -15,6 +15,6 @@ RUN chmod +x /app/index.js
 ENV PATH /app/node_modules/.bin:$PATH
 
 # install and cache app dependencies
-RUN npm install
+# RUN npm install
 
-CMD ["nodemon" "index.js"]
+# CMD ["nodemon" "index.js"]

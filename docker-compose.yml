@@ -8,5 +8,5 @@ services:
     volumes:
       - '.:/app/'
       - '/app/node_modules'
-    command: node index.js
+    command: sh -c "npm i && node index.js" 
     env_file: .env
