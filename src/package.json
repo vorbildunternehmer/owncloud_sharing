@@ -16,6 +16,8 @@
   "dependencies": {
     "axios": "^0.27.2",
     "btoa": "^1.2.1",
-    "webdav": "^4.10.0"
+    "webdav": "^4.10.0",
+    "express": "latest",
+    "body-parser": "latest"
   }
 }

@@ -2,11 +2,9 @@ version: '3.7'
 
 services:
   sharingImgs:
-    image: node:12.2.0-alpine
-    build:
-      context: ./
-    volumes:
-      - '.:/app/'
-      - '/app/node_modules'
-    command: sh -c "npm i && node index.js" 
+    image: docker.vorbild.top/owncloud_sharing:latest
+    ports:
+      - 3000:80
+    #volumes:
+    #  - './src:/app/'
     env_file: .env
